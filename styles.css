@@ -1,0 +1,179 @@
+/* * {
+    box-sizing: border-box;
+    border: 1px solid red;
+    font-family: 'Quattrocento Sans', sans-serif;
+} */
+
+h1, h2, h3, h4 {
+    font-family: 'Quattrocento', serif;
+}
+
+p {
+    line-height: 1.4;
+    margin: 1em 0;
+}
+
+
+section {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+section h2 {
+    color: #6B732F;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+.img-wrapper {
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a.button {
+    text-decoration: none;
+    color: white;
+    background-color: #343322;
+    padding: .7em 2em;
+}
+
+a.button:hover {
+    background-color: #706E4A;
+}
+
+/* 
+ 
+FONTS
+
+font-family: 'Quattrocento', serif;
+font-family: 'Quattrocento Sans', sans-serif; 
+
+*/
+
+/* HERO */
+
+#hero {
+    height: 600px;
+    background-image: url(./img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    background-attachment: fixed;
+}
+
+#hero h1 {
+    color: #EAF2AC;
+    font-size: 5em
+}
+
+/* ABOUT */
+
+
+
+.about__text {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+/* ARTICLES */
+
+#articles {
+    background-color: #343322;
+    color:#EAF2AC
+}
+
+#articles h2 {
+    color:#EAF2AC
+}
+
+.articles__cards {
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.articles__card {
+    cursor: pointer;
+    padding: 1rem;
+    border: 1px solid rgba(234, 242, 172, 0.2);
+    transition: background-color .5s;
+}
+
+.articles__card .img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.articles__card h3, 
+.articles__card span {
+    margin: 1em 0;
+}
+
+
+.articles__card span {
+    opacity: 0.5;
+}
+
+.articles__card:hover {
+    background-color: rgba(234, 242, 172, 0.2);
+}
+
+@media only screen and (max-width: 768px){
+    .articles__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .articles__cards {
+        grid-template-columns: auto;
+    }
+
+    .articles__card .img-wrapper img {
+        /* max-width: 80%; */
+    }
+}
+
+#quiz {
+    text-align: center;
+}
+
+.quiz__text {
+    margin-bottom: 3rem;
+}
+
+#images__section {
+    background-color: #34332321;
+}
+
+#images {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+#images img {
+    width: 20%;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 576px){
+
+    #images img {
+        width: 46%;
+    }
+}
